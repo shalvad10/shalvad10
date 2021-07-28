@@ -1,0 +1,166 @@
+<div class="destinations-area pt-120">
+    <div class="container">
+       <div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12">
+               <div class="section-head pb-30">
+                   <h5>Choose Your Package</h5>
+                   <h2>Select Your best Package For Your Travel</h2>
+               </div>
+           </div>
+       </div>
+
+       <div class="row">
+           <div class="col-lg-3 col-md-3">
+               <div class="package-slider-wrap">
+                   <img src="assets/images/destination/d-1.png" alt="" class="img-fluid">
+                   <div class="pakage-overlay">
+                       <strong>Spain</strong>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-9 col-md-9">
+               <div class="row">
+                   <owl-carousel-o [options]="destination1">
+                       <ng-container *ngFor="let slide of slides">
+                           <ng-template carouselSlide [id]="slide.id">
+                                <div class="package-card">
+                                    <div class="package-thumb" style="width: 308px; height: 255px;">
+                                       <img [src]="slide.img" [alt]="slide.name" class="img-fluid1" width="308" height="255">
+                                    </div>
+                                    <div class="package-details">
+                                        <div class="package-info">
+                                            <h5><span>{{slide.currency}}{{slide.price}}</span>/Per Person</h5>
+                                        </div>
+                                        <h3><i class="flaticon-arrival"></i>
+                                            <a href="package-details.html">{{slide.name}}</a>
+                                        </h3>
+                                        <div class="package-rating">
+                                           <strong><i class='bx bxs-star'></i><span>{{slide.rating}}+</span> Rating</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-9 col-md-9">
+            <div class="row">
+                <owl-carousel-o [options]="destination1">
+                    <ng-container *ngFor="let slide of slides2">
+                        <ng-template carouselSlide [id]="slide.id">
+                             <div class="package-card">
+                                 <div class="package-thumb" style="width: 308px; height: 255px;">
+                                    <img [src]="slide.img" [alt]="slide.name" class="img-fluid1" width="308" height="255">
+                                 </div>
+                                 <div class="package-details">
+                                     <div class="package-info">
+                                         <h5><span>{{slide.currency}}{{slide.price}}</span>/Per Person</h5>
+                                     </div>
+                                     <h3><i class="flaticon-arrival"></i>
+                                         <a href="package-details.html">{{slide.name}}</a>
+                                     </h3>
+                                     <div class="package-rating">
+                                        <strong><i class='bx bxs-star'></i><span>{{slide.rating}}+</span> Rating</strong>
+                                     </div>
+                                 </div>
+                             </div>
+                         </ng-template>
+                     </ng-container>
+                 </owl-carousel-o>
+             </div>
+         </div>
+           <div class="col-lg-3 col-md-3">
+               <div class="package-slider-wrap">
+                   <img src="assets/images/destination/d-2.png" alt="" class="img-fluid">
+                   <div class="pakage-overlay">
+                       <strong>Italy</strong>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-lg-3 col-md-3">
+               <div class="package-slider-wrap">
+                   <img src="assets/images/destination/d-3.png" alt="" class="img-fluid">
+                   <div class="pakage-overlay">
+                       <strong>Dubai</strong>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-9 col-md-9">
+               <div class="row owl-carousel destinations-1">
+                   <div class="package-card">
+                       <div class="package-thumb">
+                           <img src="assets/images/destination/d-11.png" alt="" class="img-fluid">
+                       </div>
+                       <div class="package-details">
+                           <div class="package-info">
+                               <h5><span>$145</span>/Per Person</h5>
+                           </div>
+                           <h3><i class="flaticon-arrival"></i>
+                               <a href="package-details.html">Amalfi Costa, Italy</a>
+                           </h3>
+                           <div class="package-rating">
+                              <strong><i class='bx bxs-star'></i><span>8K+</span> Rating</strong>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="package-card">
+                       <div class="package-thumb">
+                           <img src="assets/images/destination/d-5.png" alt="" class="img-fluid">
+                       </div>
+                       <div class="package-details">
+                           <div class="package-info">
+                               <h5><span>$240</span>/Per Person</h5>
+                              
+                           </div>
+                           <h3><i class="flaticon-arrival"></i>
+                               <a href="package-details.html">Maritime Heritage</a>
+                           </h3>
+                           <div class="package-rating">
+                              <strong><i class='bx bxs-star'></i><span>8K+</span> Rating</strong>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="package-card">
+                       <div class="package-thumb">
+                           <img src="assets/images/destination/d-9.png" alt="" class="img-fluid">
+                       </div>
+                       <div class="package-details">
+                           <div class="package-info">
+                               <h5><span>$300</span>/Per Person</h5>
+                              
+                           </div>
+                           <h3><i class="flaticon-arrival"></i>
+                               <a href="package-details.html">Souks of Deira</a>
+                           </h3>
+                           <div class="package-rating">
+                              <strong><i class='bx bxs-star'></i><span>8K+</span> Rating</strong>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="package-card">
+                       <div class="package-thumb">
+                           <img src="assets/images/destination/d-4.png" alt="" class="img-fluid">
+                       </div>
+                       <div class="package-details">
+                           <div class="package-info">
+                               <h5><span>$120</span>/Per Person</h5>
+                              
+                           </div>
+                           <h3><i class="flaticon-arrival"></i>
+                               <a href="package-details.html">Jumeirah Mosque</a>
+                           </h3>
+                           <div class="package-rating">
+                              <strong><i class='bx bxs-star'></i><span>8K+</span> Rating</strong>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+</div>
