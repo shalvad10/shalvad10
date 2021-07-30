@@ -14,6 +14,11 @@ import { DestinationsComponent } from './destinations/destinations.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FooterComponent } from './footer/footer.component';
+import { LatestBlogPostsComponent } from './latest-blog-posts/latest-blog-posts.component';
+import { WhyWeComponent } from './why-we/why-we.component';
+import { BestToursComponent } from './best-tours/best-tours.component';
+import { SpecialOfferComponent } from './special-offer/special-offer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     PreloaderComponent,
     BookingComponent,
     SearchBlockComponent,
-    DestinationsComponent
+    DestinationsComponent,
+    FooterComponent,
+    LatestBlogPostsComponent,
+    WhyWeComponent,
+    BestToursComponent,
+    SpecialOfferComponent
   ],
   imports: [
     BrowserModule,

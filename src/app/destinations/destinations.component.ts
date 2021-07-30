@@ -50,78 +50,49 @@ export class DestinationsComponent implements OnInit {
     items: 4,
     loop: true,
     margin:25,
-    smartSpeed: 1000,
+    navSpeed: 1000,
     autoWidth: true,
-    autoplay: false,
+    autoplay: true,
     dots: false,
-    nav: true,
+    nav: false,
     navText : [`<div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="bx bx-chevron-left"></i></button>`,"<i class='bx bx-chevron-right'></i>"],
     responsive:{
       0:{
         items:1,
-        nav:true,
+        nav:false,
         dots : false
       },
       350:{
         items:2,
-        nav:true, 
+        nav:false, 
         dots: false,
       },
       700:{
         items:3,
-        nav:true,
+        nav:false,
         loop:true
       },
       1050:{
         items:4,
-        nav:true,
+        nav:false,
         loop:true
       }
     }
   };
   
   slides = [
-    {id: 1, price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-4.png"},
-    {id: 2, price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-5.png"},
-    {id: 3, price: 145, currency: '$', priceType: 1, name: 'Lake Garda, Spain', rating: '8K', img: "./assets/images/destination/d-7.png"},
-    {id: 4, price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-6.png"},
+    {id: '1', price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-4.png"},
+    {id: '2', price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-5.png"},
+    {id: '3', price: 145, currency: '$', priceType: 1, name: 'Lake Garda, Spain', rating: '8K', img: "./assets/images/destination/d-7.png"},
+    {id: '4', price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-6.png"},
   ];
   
   slides2 = [
-    {id: 1, price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-4.png"},
-    {id: 2, price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-5.png"},
-    {id: 3, price: 145, currency: '$', priceType: 1, name: 'Lake Garda, Spain', rating: '8K', img: "./assets/images/destination/d-7.png"},
-    {id: 4, price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-6.png"},
+    {id: '1', price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-4.png"},
+    {id: '2', price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-5.png"},
+    {id: '3', price: 145, currency: '$', priceType: 1, name: 'Lake Garda, Spain', rating: '8K', img: "./assets/images/destination/d-7.png"},
+    {id: '4', price: 145, currency: '$', priceType: 1, name: 'Paris Hill Tour', rating: '8K', img: "./assets/images/destination/d-6.png"},
   ];
-
-// $('.destinations-2').owlCarousel({
-//    stagePadding: 1,
-//      items: 3,
-//      loop: true,
-//      margin:20,
-//      smartSpeed: 1500,
-//      autoplay: false,
-//      dots: false,
-//      nav: true,
-//      navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-//      responsive:{
-//          0:{
-//              items:1,
-//              nav:false,
-//              dots : false
-//          },
-//          600:{
-//              items:2,
-//              nav:false,
-//              dost : false,
-//          },
-//          1000:{
-//              items:3,
-//              nav:true,
-//              loop:true
-//          }
-//      }
-// });
 
   ngOnInit() {
   }

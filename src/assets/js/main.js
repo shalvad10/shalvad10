@@ -214,263 +214,252 @@
 
 
     // banner slider
-    $('.banner-slider').owlCarousel({
-        items: 1,
-        loop: true,
-        margin:0,
-        smartSpeed: 700,
-        dots: false,
-        nav: true,
-        autoplay: 4000,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
-        animateIn: 'fadeIn',
-        animateOut: 'fadeOut', 
-        navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-        responsive:{
-            0:{
-                items:1,
-                nav:false,
-                dots : false
-            },
-            600:{
-                items:1,
-                nav:false,
-                dost : false,
-            },
-            1000:{
-                items:1,
-                nav:true,
-                loop:true
-            },
-        }
+    // $('.banner-slider').owlCarousel({
+    //     items: 1,
+    //     loop: true,
+    //     margin:0,
+    //     smartSpeed: 700,
+    //     dots: false,
+    //     nav: true,
+    //     autoplay: 4000,
+    //     autoplayTimeout:4000,
+    //     autoplayHoverPause:true,
+    //     animateIn: 'fadeIn',
+    //     animateOut: 'fadeOut', 
+    //     navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
+    //     responsive:{
+    //         0:{
+    //             items:1,
+    //             nav:false,
+    //             dots : false
+    //         },
+    //         600:{
+    //             items:1,
+    //             nav:false,
+    //             dost : false,
+    //         },
+    //         1000:{
+    //             items:1,
+    //             nav:true,
+    //             loop:true
+    //         },
+    //     }
     
     
-    });
+    // });
   
      // destinations-1 slider
-     $('.destinations-1').owlCarousel({
-         stagePadding: 1,
-          items: 3,
-          loop: true,
-          margin:20,
-          smartSpeed: 1500,
-          autoplay: false,
-          dots: false,
-          nav: true,
-          navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-          responsive:{
-              0:{
-                  items:1,
-                  nav:false,
-                  dots : false
-              },
-              600:{
-                  items:2,
-                  nav:false,
-                  dost : false,
-              },
-              1000:{
-                  items:3,
-                  nav:true,
-                  loop:true
-              }
-          }
-    });
+    //  $('.destinations-1').owlCarousel({
+    //      stagePadding: 1,
+    //       items: 3,
+    //       loop: true,
+    //       margin:20,
+    //       smartSpeed: 1500,
+    //       autoplay: false,
+    //       dots: false,
+    //       nav: true,
+    //       navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
+    //       responsive:{
+    //           0:{
+    //               items:1,
+    //               nav:false,
+    //               dots : false
+    //           },
+    //           600:{
+    //               items:2,
+    //               nav:false,
+    //               dost : false,
+    //           },
+    //           1000:{
+    //               items:3,
+    //               nav:true,
+    //               loop:true
+    //           }
+    //       }
+    // });
 
-    $('.destinations-2').owlCarousel({
-        stagePadding: 1,
-          items: 3,
-          loop: true,
-          margin:20,
-          smartSpeed: 1500,
-          autoplay: false,
-          dots: false,
-          nav: true,
-          navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-          responsive:{
-              0:{
-                  items:1,
-                  nav:false,
-                  dots : false
-              },
-              600:{
-                  items:2,
-                  nav:false,
-                  dost : false,
-              },
-              1000:{
-                  items:3,
-                  nav:true,
-                  loop:true
-              }
-          }
-    });
+    // $('.destinations-2').owlCarousel({
+    //     stagePadding: 1,
+    //       items: 3,
+    //       loop: true,
+    //       margin:20,
+    //       smartSpeed: 1500,
+    //       autoplay: false,
+    //       dots: false,
+    //       nav: true,
+    //       navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
+    //       responsive:{
+    //           0:{
+    //               items:1,
+    //               nav:false,
+    //               dots : false
+    //           },
+    //           600:{
+    //               items:2,
+    //               nav:false,
+    //               dost : false,
+    //           },
+    //           1000:{
+    //               items:3,
+    //               nav:true,
+    //               loop:true
+    //           }
+    //       }
+    // });
     
     // review slider 
-    $('.review-slider').owlCarousel({
-            stagePadding: 10,
-          items: 3,
-          loop: true,
-          margin:15,
-          smartSpeed: 1500,
-          autoplay: false,
-          dots: true,
-          nav: true,
-          navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-          responsive:{
-              0:{
-                  items:1,
-                  nav:false,
-                  dots : false
-              },
-              800:{
-                  items:2,
-                  nav:false,
-                  dots : false,
-              },
-              1000:{
-                  items:3,
-                  dots: true,
-                  nav:false,
-                  loop:true
-              }
-          }
-    });
+    // $('.review-slider').owlCarousel({
+    //         stagePadding: 10,
+    //       items: 3,
+    //       loop: true,
+    //       margin:15,
+    //       smartSpeed: 1500,
+    //       autoplay: false,
+    //       dots: true,
+    //       nav: true,
+    //       navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
+    //       responsive:{
+    //           0:{
+    //               items:1,
+    //               nav:false,
+    //               dots : false
+    //           },
+    //           800:{
+    //               items:2,
+    //               nav:false,
+    //               dots : false,
+    //           },
+    //           1000:{
+    //               items:3,
+    //               dots: true,
+    //               nav:false,
+    //               loop:true
+    //           }
+    //       }
+    // });
     
     // feature slider
-    $('.feature-slider').owlCarousel({
-          items: 2,
-          loop: true,
-          margin:30,
-          smartSpeed: 1500,
-          autoplay: false,
-          dots: false,
-          nav: true,
-          navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-          responsive:{
-              0:{
-                  items:1,
-                  nav:false,
-                  dots : false
-              },
-              600:{
-                  items:1,
-                  nav:false,
-                  dots : false,
-              },
-              1000:{
-                  items:2,
-                  dots: false,
-                  nav: false,
-                  loop:true
-              }
-          }
-    });
+    // $('.feature-slider').owlCarousel({
+    //       items: 2,
+    //       loop: true,
+    //       margin:30,
+    //       smartSpeed: 1500,
+    //       autoplay: false,
+    //       dots: false,
+    //       nav: true,
+    //       navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
+    //       responsive:{
+    //           0:{
+    //               items:1,
+    //               nav:false,
+    //               dots : false
+    //           },
+    //           600:{
+    //               items:1,
+    //               nav:false,
+    //               dots : false,
+    //           },
+    //           1000:{
+    //               items:2,
+    //               dots: false,
+    //               nav: false,
+    //               loop:true
+    //           }
+    //       }
+    // });
     
     // offer slider
-    $('.offer-slider').owlCarousel({
-        stagePadding: 1,
-        items: 3,
-        loop: true,
-        margin:25,
-        smartSpeed: 1500,
-        autoplay: false,
-        dots: false,
-        nav: true,
-        navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-        responsive:{
-            0:{
-                items:1,
-                nav:false,
-                dots : false
-            },
-            600:{
-                items:2,
-                nav:false,
-                dots : false,
-            },
-            1000:{
-                items:3,
-                dots: false,
-                nav:false,
-                loop:true
-            }
-        }
-    });
+    // $('.offer-slider').owlCarousel({
+    //     stagePadding: 1,
+    //     items: 3,
+    //     loop: true,
+    //     margin:25,
+    //     smartSpeed: 1500,
+    //     autoplay: false,
+    //     dots: false,
+    //     nav: true,
+    //     navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
+    //     responsive:{
+    //         0:{
+    //             items:1,
+    //             nav:false,
+    //             dots : false
+    //         },
+    //         600:{
+    //             items:2,
+    //             nav:false,
+    //             dots : false,
+    //         },
+    //         1000:{
+    //             items:3,
+    //             dots: false,
+    //             nav:false,
+    //             loop:true
+    //         }
+    //     }
+    // });
 
        // feature slider 2
-    $('.feature-slider-2').owlCarousel({
-        items: 3,
-        loop: true,
-        margin:25,
-        smartSpeed: 1500,
-        autoplay: false,
-        dots: false,
-        nav: true,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-        navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-        responsive:{
-            0:{
-                items:1,
-                nav:false,
-                dots : false
-            },
-            800:{
-                items:2,
-                nav:false,
-                dots : false,
-            },
-            1000:{
-                items:3,
-                dots: false,
-                nav: true,
-                loop:true
-            }
-        }
-    });
+    // $('.feature-slider-2').owlCarousel({
+    //     items: 3,
+    //     loop: true,
+    //     margin:25,
+    //     smartSpeed: 1500,
+    //     autoplay: false,
+    //     dots: false,
+    //     nav: true,
+    //     animateOut: 'slideOutUp',
+    //     animateIn: 'slideInUp',
+    //     navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
+    //     responsive:{
+    //         0:{
+    //             items:1,
+    //             nav:false,
+    //             dots : false
+    //         },
+    //         800:{
+    //             items:2,
+    //             nav:false,
+    //             dots : false,
+    //         },
+    //         1000:{
+    //             items:3,
+    //             dots: false,
+    //             nav: true,
+    //             loop:true
+    //         }
+    //     }
+    // });
 
         // feature slider 2
-    $('.guide-slider').owlCarousel({
-        items: 3,
-        loop: true,
-        margin:25,
-        smartSpeed: 1500,
-        autoplay: false,
-        dots: false,
-        nav: true,
-        navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
-        responsive:{
-            0:{
-                items:1,
-                nav:false,
-                dots : false
-            },
-            600:{
-                items:2,
-                nav:false,
-                dots : false,
-            },
-            1000:{
-                items:3,
-                dots: false,
-                nav: true,
-                loop:true
-            }
-        }
-    });
-
-    //Type js
-    var element = $(".element");
-    $(function () {
-        element.typed({
-            strings: ["Hampshire", "Indonesia", "Madagascar "],
-            typeSpeed: 190,
-            loop: true,
-        });
-    });
-
+    // $('.guide-slider').owlCarousel({
+    //     items: 3,
+    //     loop: true,
+    //     margin:25,
+    //     smartSpeed: 1500,
+    //     autoplay: false,
+    //     dots: false,
+    //     nav: true,
+    //     navText : ["<i class='bx bx-chevron-left' ></i>","<i class='bx bx-chevron-right'></i>"],
+    //     responsive:{
+    //         0:{
+    //             items:1,
+    //             nav:false,
+    //             dots : false
+    //         },
+    //         600:{
+    //             items:2,
+    //             nav:false,
+    //             dots : false,
+    //         },
+    //         1000:{
+    //             items:3,
+    //             dots: false,
+    //             nav: true,
+    //             loop:true
+    //         }
+    //     }
+    // });
 
 }(jQuery));
 

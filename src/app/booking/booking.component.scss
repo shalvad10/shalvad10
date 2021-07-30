@@ -1,0 +1,27 @@
+input[type="date"] {
+    position: relative;
+    padding: 10px;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  input[type="date"]:before {
+    color: transparent;
+    background: none;
+    display: block;
+    font-family: 'flaticon';
+    font-weight: normal;
+    content: '\f106';
+    /* This is the calendar icon in FontAwesome */
+    width: 25px;
+    font-size: 17px;
+    position: absolute;
+    top: 17px;
+    right: 0px;
+    color: rgb(34, 34, 34);
+  }

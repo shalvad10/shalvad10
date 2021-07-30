@@ -1,0 +1,42 @@
+<div class="offer-area pt-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-head pb-30">
+                    <h5>Special offer</h5>
+                    <h2>Our Most Popular And Best Adventures</h2>
+                </div>
+            </div>
+        </div>
+        <div class="offer-slider dark-nav ">
+        <owl-carousel-o [options]="destination1">
+            <ng-container *ngFor="let slide of slides">
+                <ng-template carouselSlide [id]="slide.id">
+                    <div class="offer-card">
+                        <div class="offer-thumb">
+                            <img [src]="slide.img" [alt]="slide.name" class="img-fluid">
+                        </div>
+                        <div class="offer-details">
+                            <div class="offer-info">
+                                <h5><i class="flaticon-calendar"></i>{{slide.length.days}} Days/{{slide.length.night}} night</h5>
+                                <ul class="offer-rating">
+                                    <li><i class='bx bxs-star'></i></li>
+                                    <li><i class='bx bxs-star'></i></li>
+                                    <li><i class='bx bxs-star'></i></li>
+                                    <li><i class='bx bxs-star'></i></li>
+                                    <li><i class='bx bxs-star'></i></li>
+                                </ul>
+                            </div>
+                            <h3>
+                                <i class="flaticon-arrival"></i>
+                                <a href="package-details.html">{{slide.name}}</a>
+                            </h3>
+                            <strong>{{slide.currency}}{{slide.price}} <span>{{slide.currency}}{{slide.oldPrice}}</span></strong>
+                        </div>
+                    </div>
+                 </ng-template>
+             </ng-container>
+         </owl-carousel-o>
+        </div>
+    </div>
+</div>

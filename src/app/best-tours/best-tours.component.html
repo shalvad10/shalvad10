@@ -1,0 +1,34 @@
+<div class="feature-area mt-120 p-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-head pb-60">
+                    <h5>Feature Tours</h5>
+                    <h2>See Our Best Popular Destinations</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="feature-slider">
+                <owl-carousel-o [options]="destination1">
+                    <ng-container *ngFor="let slide of slides">
+                        <ng-template carouselSlide [id]="slide.id">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img [src]="slide.img" [alt]="slide.name" class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                         <a href="#" class="title">{{slide.name}}</a>
+                                         <h5><i class='bx bxs-star'></i><span>{{slide.rating}}</span> Rating</h5>
+                                         <strong>{{slide.currency}}{{slide.price}}<span>{{slide.currency}}{{slide.oldPrice}}</span></strong>
+                                    </div>
+                                </div>
+                         </ng-template>
+                     </ng-container>
+                 </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

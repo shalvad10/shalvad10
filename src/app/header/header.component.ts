@@ -15,36 +15,56 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit() {
-    setTimeout(() => {
-      
-    console.warn(this.searchCard);
-    }, 3000);
+    document.addEventListener( 'click', (e) =>
+    {
+      if ( document.getElementById('account-dropdown').classList.contains('activeCard') === true && !this.hasAttributeInHierarchy(e.target, 'dontClose'))
+      {
+        document.getElementById('account-dropdown').classList.remove('activeCard')
+      }
+    });
+  }
+
+  public hasAttributeInHierarchy(el,attr)
+  {
+    if(el)
+    {
+      if(el.getAttribute(attr))
+      {
+        return true;
+      }
+      return this.hasAttributeInHierarchy(el.parentElement,attr);
+    }
+    return false;
+  }
+
+  userOptions() {
+    document.getElementById('account-dropdown').classList.toggle('activeCard');
   }
 
   openSearch() {
   
     // Search Bar js
     if (this.searchOpen) {
-      this.searchOpen.forEach((el)=>{
-          el.addEventListener('click',()=>{
-            this.searchCard.forEach((el)=>{
-              el.classList.add('activeSearch')
-            })
-          })
-      })
-      this.searchClose.forEach((el)=>{
-          el.addEventListener('click',()=>{
-            this.searchCard.forEach((el)=>{
-              el.classList.remove('activeSearch')
-            })
-          })
-      })
+      // this.searchOpen.forEach((el)=>{
+      //     el.addEventListener('click',()=>{
+      //       this.searchCard.forEach((el)=>{
+      //         el.classList.add('activeSearch')
+      //       })
+      //     })
+      // })
+      // this.searchClose.forEach((el)=>{
+      //     el.addEventListener('click',()=>{
+      //       this.searchCard.forEach((el)=>{
+      //         el.classList.remove('activeSearch')
+      //       })
+      //     })
+      // })
       window.onclick = function(event){
-          this.searchCard.forEach((el)=>{
-            if(event.target == el){
-              el.classList.remove('activeSearch')
-            }
-          })
+          // this.searchCard.forEach((el)=>{
+          //   if(event.target == el){
+          //     el.classList.remove('activeSearch')
+          //   }
+          // })
           // if(!event.target.matches('.user-dropdown-icon i')){
           //   accountCard.forEach((element)=>{
           //     if(element.classList.contains('activeCard')){
